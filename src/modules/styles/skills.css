@@ -1,0 +1,129 @@
+#skills {
+  background: rgb(252, 162, 177);
+  border: 3em solid #222;
+  color: #222;
+  min-height: 100vh;
+  padding: 6em 10em 6em 10em;
+  width: 100%;
+}
+.skill_heading {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.skill_heading::before {
+  border-bottom: 0.2em solid #222;
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: -15;
+  position: absolute;
+  width: 10%;
+}
+.otherSkills {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.otherSkills::before {
+  border-bottom: 0.2em solid #222;
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: -5;
+  position: absolute;
+  width: 10%;
+}
+.skill_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill_wrapper li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+  word-spacing: 0.2em;
+  line-height: 1.5em;
+  padding: 0.5em 0 0.5em 0;
+  font-weight: 300;
+  list-style-type: square;
+  margin-left: 2.5em;
+}
+
+/* Responsive @media query */
+ @media only screen and (min-width: 992px) {
+  .otherSkills {
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+    margin-top: 1.5em;
+  }
+  otherSkills::before {
+    bottom: -4;
+    width: 30%;
+  }
+} 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 58%;
+  }
+  #skills {
+    padding: 6em 7em 6em 7em;
+  }
+  .otherSkills {
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+    margin-top: 1.5em;
+  }
+  otherSkills::before {
+    bottom: -4;
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 53%;
+  }
+  #skills {
+    padding: 5em 5em 3.5em 5em;
+  }
+  .otherSkills {
+    font-size: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    margin-top: 1em;
+  }
+  otherSkills::before {
+    bottom: -5;
+    width: 30%;
+  }
+  
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  html {
+    font-size: 45%;
+  }
+  #skills {
+    min-height: 100vh;
+    padding: 5em 3em 2em 3em;
+  }
+  .otherSkills {
+    font-size: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    margin-top: 1em;
+  }
+  otherSkills::before {
+    bottom: -5;
+    width: 30%;
+  }
+  .skill_heading::before {
+    width: 30%;
+  }
+}

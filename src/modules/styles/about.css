@@ -1,0 +1,107 @@
+#about {
+  background: rgb(252, 162, 177);
+  border: 3em solid #222;
+  color: #222;
+  min-height: 100vh;
+  padding: 6em 10em 6em 10em;
+  width: 100%;
+}
+section,
+main {
+  display: block;
+}
+.section_heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.section_heading::before {
+  border-bottom: 0.2em solid #222;
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: -15;
+  position: absolute;
+  width: 10%;
+}
+.paragraph_intro {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  word-spacing: 0.5em;
+  padding-bottom: 0.5em;
+}
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+  word-spacing: 0.2em;
+  line-height: 1.5em;
+  padding: 0.5em 0 0.5em 0;
+  font-weight: 300;
+}
+.books {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  margin-top: 1.5em;
+  position: relative;
+}
+.books::before {
+  border-bottom: 0.2em solid #222;
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: -8;
+  position: absolute;
+  width: 10%;
+}
+.books + p {
+  color: #222;
+  font-size: 1.8em;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1em;
+  font-weight: 300;
+}
+
+/* Responsive @media query */
+@media only screen and (min-width: 992px) {
+  #about {
+    min-height: 100vh;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 58%;
+  }
+  #about {
+    min-height: 100vh;
+    padding: 6em 7em 6em 7em;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 53%;
+  }
+  #about {
+    min-height: 100vh;
+    padding: 5em 5em 3.5em 5em;
+  }
+  .section_heading::before{
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+  html {
+    font-size: 45%;
+  }
+  #about{
+    min-height: 100vh;
+    padding: 5em 3em 2em 3em;
+  }
+  .section_heading::before{
+    width: 30%;
+  }
+  .books::before {
+  width: 20%;
+}
+}

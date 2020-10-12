@@ -1,0 +1,133 @@
+#contact {
+  background: rgb(252, 162, 177);
+  border: 3em solid #222;
+  color: #222;
+  min-height: 100vh;
+  padding: 6em 10em 6em 10em;
+  width: 100%;
+}
+.contact_heading,
+.connect_heading {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.contact_heading::before,
+.connect_heading::before {
+  border-bottom: 0.2em solid #222;
+  content: "";
+  height: 2px;
+  left: 0;
+  bottom: -15;
+  position: absolute;
+  width: 10%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form input {
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-bottom: 1em;
+  border-bottom: 0.2em solid #222;
+}
+.form textarea {
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-bottom: 1em;
+  border: 0.4em solid #222;
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+.form__label {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+}
+button {
+  appearance: none;
+  background: rgb(252, 162, 177);
+  border: 0.3em solid #222;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 1.8em;
+  font-family: "Poppins", sans-serif;
+  height: 3em;
+  width: 6em;
+  margin: 2em auto;
+  padding: 2em auto;
+  position: absolute;
+  bottom: -6em;
+  right: 0;
+}
+.connect_heading {
+  margin-top: 2em;
+}
+.connect_link {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+.connect_link a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  color: #222;
+  text-decoration: none;
+  margin: 0.1em 0;
+}
+footer {
+  text-align: center;
+  margin: 0em auto 0em auto;
+  padding-top:1em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+  color: #222222;
+  font-weight: 100;
+}
+/* Responsive @media query */
+/* @media only screen and (min-width: 992px) {
+} */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 58%;
+  }
+  #contact {
+    padding: 6em 7em 6em 7em;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 53%;
+  }
+  #contact {
+    height: 100vh;
+    padding: 5em 5em 3.5em 5em;
+  }
+  .contact_heading::before,
+  .connect_heading::before {
+    width: 31%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  html {
+    font-size: 45%;
+  }
+  #contact {
+    min-height: 100vh;
+    padding: 5em 3em 2em 3em;
+  }
+  .contact_heading::before,
+  .connect_heading::before {
+    width: 31%;
+  }
+}

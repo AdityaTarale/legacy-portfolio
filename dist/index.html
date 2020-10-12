@@ -1,0 +1,172 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Tarale Portfolio</title>
+  <link rel="icon" href="./assets/img/title-logo.png" type="image/icon type" />
+  <link rel="icon" href="https://github.com/AdityaTarale/portfolio/blob/master/assets/img/title-logo.png?raw=true"
+    type="image/icon type">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="jquery.easeScroll.js"></script>
+  <style>
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #333;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgb(252, 162, 177);
+      border-radius: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="menu-wrap">
+    <input type="checkbox" name="checkToggle" class="toggler" />
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#project-wrapper">PROJECTS</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header id="home" class="header">
+    <h1 class="header__heading">Hi, my name is <br />Aditya Tarale.</h1>
+    <h2 class="header__heading">
+      I’m a developer <br />based in Orange City.
+    </h2>
+    <p class="header__tagline">Want to know more?</p>
+    <span class="header__text--vertical">Start scrolling</span>
+    <div id="particles-js"></div>
+  </header>
+  <main>
+    <section id="about">
+      <h2 class="section_heading">ABOUT ME</h2>
+      <p class="paragraph_intro">
+        I am a developer who enjoys working on front-end development but also
+        sometimes can gets a kick out of back-end.
+      </p>
+      <p class="paragraph">
+        I am a Software Engineering student, Known for analysing problem and
+        giving optimal solution & I enjoy learning everything I can while
+        making cool stuff. I am really curious about learning server-side
+        development .
+      </p>
+
+      <p class="paragraph">
+        I'm currently learning Node.js and React.js and have a strong
+        foundation in JavaScript and web development. I've recently completed
+        Modern Js web development bootcamp by The Net Ninja.
+      </p>
+      <p class="paragraph">
+        I am currently trying my hand at developing web apps. I would enjoy
+        the opportunity to work/collaborate on projects
+      </p>
+      <p class="paragraph">
+        When I'm not coding, I enjoy spending time with books, family and some
+        of my best friends or Playing Candy Crush Saga.
+      </p>
+
+      <h2 class="books">RECENTLY READ BOOK</h2>
+      <p>MIRACLE MORNING</p>
+    </section>
+    <section id="project-wrapper">
+      <h2 class="project_heading">Projects</h2>
+      <section id="project">
+        <div class="project_box1"></div>
+        <div class="project_box2"></div>
+        <div class="project_box3"></div>
+        <div class="project_box4"></div>
+      </section>
+    </section>
+    <section id="skills">
+      <h2 class="skill_heading">SKILLS</h2>
+      <div class="skill_wrapper">
+        <div class="skill_wrapper1">
+          <ul>
+            <li>HTML</li>
+            <li>PUG</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>BOOTSTRAP</li>
+            <li>BULMA</li>
+            <li>JAVASCRIPT</li>
+            <li>JQUERY</li>
+            <li>NPM</li>
+            <li>FIREBASE</li>
+            <li>GIT</li>
+            <li>MARKDOWN</li>
+          </ul>
+        </div>
+        <div class="skill_wrapper2">
+          <h3 class="otherSkills">FAMILIER WITH</h3>
+          <ul>
+            <li>MONGODB</li>
+            <li>NODEJS</li>
+            <li>REACTJS</li>
+            <li>PYTHON</li>
+            <li>C</li>
+            <li>CPP</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 class="contact_heading">CONTACT</h2>
+      <div class="form">
+        <form action="mailto:tarale.adi@gmail.com">
+          <label class="form__label" for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <label class="form__label" for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__textarea" name="message" id="message" rows="8"></textarea>
+          <button class="form__button" type="submit">Send</button>
+        </form>
+      </div>
+      <h2 class="connect_heading">CONNECT</h2>
+      <div class="connect_link">
+        <a href="https://github.com/AdityaTarale">Github</a>
+        <a href="https://www.linkedin.com/in/aditya-tarale-8234261b2/">LinkedIn</a>
+      </div>
+      <footer>Made by &lt;&gt; Aditya Tarale</footer>
+    </section>
+  </main>
+  <script src="./assets/bundle.js"></script>
+
+  <script>
+    $("html").easeScroll();
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 20,
+      accelerationMax: 1,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true,
+    });
+  </script>
+</body>
+
+</html>
